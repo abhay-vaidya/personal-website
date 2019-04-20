@@ -9,7 +9,7 @@ class Skills extends Component {
           <h1 className="gradient-bg mb-4 md:mr-4 md:mt-2">
             I design cool things in
           </h1>
-          <ul className="list-reset flex flex-col text-2xl py-3 px-4 border-grey-darkest border-solid border-2">
+          <ul className="list-reset flex flex-col text-2xl py-3 px-5 border-grey-darkest border-solid border-2">
             <li>Adobe XD</li>
             <li>Illustrator</li>
             <li>Photoshop</li>
@@ -19,7 +19,7 @@ class Skills extends Component {
           <h1 className="gradient-bg mb-4 md:mr-4 md:mt-2">
             and build them with
           </h1>
-          <ul className="list-reset flex flex-col text-2xl py-3 px-4 border-grey-darkest border-solid border-2">
+          <ul className="list-reset flex flex-col text-2xl py-3 px-5 border-grey-darkest border-solid border-2">
             <li>JavaScript</li>
             <li>Python</li>
             <li>Java</li>
