@@ -34,6 +34,10 @@ a {
   transition: all ease-in 0.2s;
 }
 
+.nav-wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
 .nav-active {
   @apply bg-black;
 }

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Skills extends Component {
   render() {
     return (
-      <section id="skills" className="p-12 flex flex-col md:flex-row w-full items-center justify-end">
+      <section id="skills" className="px-12 py-20 flex flex-col md:flex-row w-full items-center justify-end">
         <div className="w-full md:w-1/6 self-start">
           <h1 className="text-black section-title text-5xl mb-5 md:mb-0">Skills</h1>
         </div>

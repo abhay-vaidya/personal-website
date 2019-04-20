@@ -12,7 +12,7 @@ export default ({
 }) => {
   return (
     <div
-      className={`p-6 bg-teal-darkest border border-teal-dark flex flex-col ${className}`}
+      className={`p-6 bg-teal-pure-darkest border border-teal-darker flex flex-col ${className}`}
     >
       <div
         className={`flex flex-col md:flex-row justify-between items-center ${
