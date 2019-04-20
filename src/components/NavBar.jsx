@@ -5,7 +5,7 @@ class NavBar extends Component {
   render() {
     return (
       <nav className="fixed w-full z-50 font-bold">
-        <div className="bg-pure-black p-6 flex-col md:flex-row flex md:items-center text-center justify-between container mx-auto">
+        <div className="p-6 flex-col md:flex-row flex md:items-center text-center justify-between container mx-auto">
           <Link
             to="landing"
             spy={true}

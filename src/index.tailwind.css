@@ -1,6 +1,7 @@
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
+@tailwind screens;
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
@@ -8,10 +9,18 @@ body {
   @apply bg-pure-black;
 }
 
-.section-title {
-  writing-mode: vertical-lr;
-  transform: scale(-1, -1);
-  font-size: 7rem;
+@screen lg {
+  .section-title {
+    font-size: 7rem;
+  }
+}
+
+@screen md {
+  .section-title {
+    writing-mode: vertical-lr;
+    transform: scale(-1, -1);
+    font-size: 5rem;
+  }
 }
 
 .gradient-bg {

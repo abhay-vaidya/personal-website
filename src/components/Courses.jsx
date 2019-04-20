@@ -5,19 +5,21 @@ class Courses extends Component {
     return (
       <section
         id="experience"
-        className="p-12 flex w-full items-center justify-end"
+        className="p-12 flex flex-col md:flex-row w-full items-center justify-end"
       >
-        <div className="w-1/6 self-start">
-          <h1 className="text-black section-title">Courses</h1>
+        <div className="w-full md:w-1/6 self-start">
+          <h1 className="text-black section-title text-5xl mb-5 md:mb-0">
+            Courses
+          </h1>
         </div>
-        <div className="w-5/6 flex flex-col justify-end">
+        <div className="w-full md:w-5/6 flex flex-col justify-end">
           <h1 className="gradient-bg p-2 mb-12">
             I'm constantly learning. Here are some courses I've taken that have
             helped me build a strong foundation in computer science and software
             engineering.
           </h1>
-          <div className="flex justify-center">
-            <div className="mr-6">
+          <div className="flex flex-col md:flex-row justify-center">
+            <div className="mb-4 md:mr-6">
               <h3 className="mb-6 ml-8">Computer Science</h3>
               <ul>
                 <li>Introduction to Computer Science I</li>

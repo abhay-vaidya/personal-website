@@ -6186,36 +6186,6 @@ table {
 .z-auto {
   z-index: auto;
 }
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
-
-body {
-  background-color: #000;
-}
-
-.section-title {
-  -webkit-writing-mode: vertical-lr;
-          writing-mode: vertical-lr;
-  -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1);
-  font-size: 7rem;
-}
-
-.gradient-bg {
-  background-image: url('./assets/gradient.jpg');
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-attachment: fixed;
-}
-
-a {
-  -webkit-transition: all ease-in .2s;
-  transition: all ease-in .2s;
-}
-
-.nav-active {
-  background-color: #22292f;
-}
 
 @media (min-width: 576px) {
   .sm\:list-reset {
@@ -28755,4 +28725,42 @@ a {
   .xl\:z-auto {
     z-index: auto;
   }
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+body {
+  background-color: #000;
+}
+
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    -webkit-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+    -webkit-transform: scale(-1, -1);
+            transform: scale(-1, -1);
+    font-size: 5rem;
+  }
+}
+
+.gradient-bg {
+  background-image: url('./assets/gradient.jpg');
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+}
+
+a {
+  -webkit-transition: all ease-in .2s;
+  transition: all ease-in .2s;
+}
+
+.nav-active {
+  background-color: #22292f;
 }

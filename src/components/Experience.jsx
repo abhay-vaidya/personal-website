@@ -9,12 +9,14 @@ class Experience extends Component {
     return (
       <section
         id="experience"
-        className="p-12 flex w-full items-center justify-end"
+        className="p-12 flex flex-col md:flex-row w-full items-center justify-end"
       >
-        <div className="w-1/6 self-start">
-          <h1 className="text-black section-title">Exp.</h1>
+        <div className="w-full md:w-1/6 self-start">
+          <h1 className="text-black section-title text-5xl mb-5 md:mb-0">
+            Exp.
+          </h1>
         </div>
-        <div className="w-5/6 flex flex-col justify-end">
+        <div className="w-full md:w-5/6 flex flex-col justify-end">
           <h1 className="gradient-bg p-2 mb-12">
             I've had the pleasure of working at some great companies to grow as
             a software engineer.
