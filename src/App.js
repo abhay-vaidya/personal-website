@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import NavBar from './components/NavBar'
-import Landing from './components/Landing'
-import Skills from './components/Skills'
-import Experience from './components/Experience'
-import Courses from './components/Courses'
+import Landing from './containers/Landing'
+import Skills from './containers/Skills'
+import Experience from './containers/Experience'
+import Courses from './containers/Courses'
 
 class App extends Component {
   render() {
@@ -12,11 +12,8 @@ class App extends Component {
         <NavBar />
         <div className="container mx-auto">
           <Landing />
-          <hr className="border border-black" />
           <Skills />
-          <hr className="border border-black" />
           <Experience />
-          <hr className="border border-black" />
           <Courses />
         </div>
       </div>
