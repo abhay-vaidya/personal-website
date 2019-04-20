@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-scroll": "^1.7.11"
   },
   "scripts": {
     "prestart": "tailwind build ./src/index.tailwind.css -c ./tailwind.js -o ./src/index.css",

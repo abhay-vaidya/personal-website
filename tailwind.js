@@ -24,7 +24,7 @@ View the full documentation at https://tailwindcss.com.
 |
 */
 
-let defaultConfig = require('tailwindcss/defaultConfig')()
+// let defaultConfig = require('tailwindcss/defaultConfig')()
 
 
 /*
@@ -46,6 +46,7 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'transparent': 'transparent',
 
+  'pure-black': '#000',
   'black': '#22292f',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',

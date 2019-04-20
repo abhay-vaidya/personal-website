@@ -1,5 +1,30 @@
 @tailwind preflight;
-
+@tailwind components;
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+body {
+  @apply bg-pure-black;
+}
+
+.section-title {
+  writing-mode: vertical-lr;
+  transform: scale(-1, -1);
+  font-size: 7rem;
+}
+
+.gradient-bg {
+  background-image: url('./assets/gradient.jpg');
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @apply bg-fixed;
+}
+
+a {
+  transition: all ease-in 0.2s;
+}
+
+.nav-active {
+  @apply bg-black;
+}
