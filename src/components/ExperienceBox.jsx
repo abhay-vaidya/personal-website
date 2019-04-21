@@ -7,8 +7,9 @@ export default ({
   start,
   end,
   duration,
-  className,
-  children
+  duties,
+  technologies,
+  className
 }) => {
   return (
     <div
@@ -16,7 +17,7 @@ export default ({
     >
       <div
         className={`flex flex-col md:flex-row justify-between items-center ${
-          children ? 'mb-8' : ''
+          duties ? 'mb-8' : ''
         }`}
       >
         <div className="flex mb-4 md:mb-0 items-center">
@@ -32,7 +33,20 @@ export default ({
           </p>
         </div>
       </div>
-      {children}
+
+      {duties && (
+        <ul className="mb-8">
+          {duties.map((duty) => (
+            <li>{duty}</li>
+          ))}
+        </ul>
+      )}
+      {technologies && (
+        <div>
+          <p className="font-bold">Technologies:</p>
+          <p>{technologies}</p>
+        </div>
+      )}
     </div>
   )
 }
