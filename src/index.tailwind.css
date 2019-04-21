@@ -37,12 +37,5 @@ a {
   .section-title {
     writing-mode: vertical-lr;
     transform: scale(-1, -1);
-    font-size: 5rem;
-  }
-}
-
-@screen lg {
-  .section-title {
-    font-size: 7rem;
   }
 }
