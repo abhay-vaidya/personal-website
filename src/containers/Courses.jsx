@@ -3,8 +3,10 @@ import Section from './Section'
 import { courses } from '../Data'
 
 class Courses extends Component {
-  getCourseSection = (subject, courseList) => {
-    const innerElems = courseList.map((course) => <li>{course}</li>)
+  getCourseSection = (subject, courseList, keyPrefix) => {
+    const innerElems = courseList.map((course, index) => (
+      <li key={`${keyPrefix}-${index}`}>{course}</li>
+    ))
     return (
       <div className="mb-4 md:mr-6">
         <h3 className="mb-6 ml-8">{subject}</h3>
@@ -14,8 +16,16 @@ class Courses extends Component {
   }
   render() {
     const { computerScience, mathematics } = courses
-    const csSection = this.getCourseSection('Computer Science', computerScience)
-    const mathSection = this.getCourseSection('Mathematics', mathematics)
+    const csSection = this.getCourseSection(
+      'Computer Science',
+      computerScience,
+      'cs'
+    )
+    const mathSection = this.getCourseSection(
+      'Mathematics',
+      mathematics,
+      'math'
+    )
     return (
       <Section title="Courses" id="courses">
         <h1 className="gradient-bg p-2 mb-12">

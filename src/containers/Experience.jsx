@@ -6,7 +6,7 @@ import resume from '../assets/Abhay-Vaidya-Resume.pdf'
 
 class Experience extends Component {
   getExperienceSection = () => {
-    return experiences.map((exp) => {
+    return experiences.map((exp, index) => {
       const {
         position,
         company,
@@ -19,6 +19,7 @@ class Experience extends Component {
       } = exp
       return (
         <SingleExperience
+          key={`exp-${index}`}
           position={position}
           company={company}
           imageSrc={imageSrc}

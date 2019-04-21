@@ -37,8 +37,8 @@ export default ({
       </div>
       {duties && (
         <ul className="mb-8">
-          {duties.map((duty) => (
-            <li>{duty}</li>
+          {duties.map((duty, index) => (
+            <li key={`duty-${index}`}>{duty}</li>
           ))}
         </ul>
       )}
