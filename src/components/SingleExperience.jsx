@@ -13,7 +13,9 @@ export default ({
 }) => {
   return (
     <div
-      className={`p-6 bg-teal-pure-darkest border border-teal-darker flex flex-col ${className}`}
+      className={
+        'p-6 bg-teal-pure-darkest border border-teal-darker flex flex-col mb-6'
+      }
     >
       <div
         className={`flex flex-col md:flex-row justify-between items-center ${
@@ -33,7 +35,6 @@ export default ({
           </p>
         </div>
       </div>
-
       {duties && (
         <ul className="mb-8">
           {duties.map((duty) => (

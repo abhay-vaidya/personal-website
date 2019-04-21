@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ExperienceBox from '../components/ExperienceBox'
+import SingleExperience from '../components/SingleExperience'
 import Section from './Section'
 import { experiences } from '../Data'
 import resume from '../assets/Abhay-Vaidya-Resume.pdf'
@@ -18,7 +18,7 @@ class Experience extends Component {
         technologies
       } = exp
       return (
-        <ExperienceBox
+        <SingleExperience
           position={position}
           company={company}
           imageSrc={imageSrc}
@@ -27,7 +27,6 @@ class Experience extends Component {
           duration={duration}
           duties={duties}
           technologies={technologies}
-          className="mb-6"
         />
       )
     })
