@@ -1,8 +1,21 @@
 import React, { Component } from 'react'
 import Section from './Section'
+import { courses } from '../Data'
 
 class Courses extends Component {
+  getCourseSection = (subject, courseList) => {
+    const innerElems = courseList.map((course) => <li>{course}</li>)
+    return (
+      <div className="mb-4 md:mr-6">
+        <h3 className="mb-6 ml-8">{subject}</h3>
+        <ul>{innerElems}</ul>
+      </div>
+    )
+  }
   render() {
+    const { computerScience, mathematics } = courses
+    const csSection = this.getCourseSection('Computer Science', computerScience)
+    const mathSection = this.getCourseSection('Mathematics', mathematics)
     return (
       <Section title="Courses" id="courses">
         <h1 className="gradient-bg p-2 mb-12">
@@ -11,34 +24,8 @@ class Courses extends Component {
           engineering.
         </h1>
         <div className="flex flex-col md:flex-row justify-center">
-          <div className="mb-4 md:mr-6">
-            <h3 className="mb-6 ml-8">Computer Science</h3>
-            <ul>
-              <li>Introduction to Computer Science I</li>
-              <li>Introduction to Computer Science II</li>
-              <li>Discrete Mathematics</li>
-              <li>Introduction to the Theory of Computation</li>
-              <li>Software Design</li>
-              <li>Software Tools and Systems Programming</li>
-              <li>Computer Organization</li>
-              <li>Design and Analysis of Data Structures</li>
-              <li>Introduction to Software Engineering</li>
-              <li>Principles of Programming Languages</li>
-              <li>Computability and Computational Complexity</li>
-              <li>Human-Computer Interaction</li>
-              <li>Engineering Large Software Systems</li>
-              <li>Computer and Network Security</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="mb-6 ml-8">Mathematics</h3>
-            <ul>
-              <li>Calculus I for Mathematical Sciences</li>
-              <li>Calculus II for Mathematical Sciences</li>
-              <li>Linear Algebra I</li>
-              <li>Linear Algebra II</li>
-            </ul>
-          </div>
+          {csSection}
+          {mathSection}
         </div>
       </Section>
     )
