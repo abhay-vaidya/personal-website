@@ -20,9 +20,12 @@ export const experiences = [
     end: 'Dec. 2018',
     duration: '8 mos',
     duties: [
-      'Helped architect and develop new e-commerce merchandising platform visible to over 10 million AIR MILES members'
+      'Helped architect and develop new e-commerce merchandising platform visible to over 10 million AIR MILES members',
+      'Designed automated changelog process with git and Jira integration to improve accountability and establish an audit trail',
+      'Presented tech seminar about improving internal API documentation practices with Postman'
     ],
-    technologies: 'Node.js, React + Redux, Express, TypeScript, Next.js'
+    technologies:
+      'Node.js, React + Redux, Express, TypeScript, Next.js, Jenkins'
   }
 ]
 

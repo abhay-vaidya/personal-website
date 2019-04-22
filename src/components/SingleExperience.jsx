@@ -43,7 +43,7 @@ export default ({
       )}
       {technologies && (
         <div>
-          <p className="font-bold">Technologies:</p>
+          <p className="font-bold">Tools & Technologies:</p>
           <p>{technologies}</p>
         </div>
       )}
