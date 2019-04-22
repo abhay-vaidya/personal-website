@@ -3,7 +3,7 @@ import React from 'react'
 export default ({
   position,
   company,
-  imageSrc,
+  logo,
   start,
   end,
   duration,
@@ -23,7 +23,7 @@ export default ({
         }`}
       >
         <div className="flex mb-4 md:mb-0 items-center">
-          <img src={imageSrc} alt={company} className="w-16 h-16 mr-4" />
+          <img src={logo} alt={company} className="w-16 h-16 mr-4" />
           <div>
             <p className="font-bold">{position}</p>
             <p className="text-teal-lighter">{company}</p>

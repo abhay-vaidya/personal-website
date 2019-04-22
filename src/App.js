@@ -4,6 +4,7 @@ import Landing from './containers/Landing'
 import Skills from './containers/Skills'
 import Experience from './containers/Experience'
 import Courses from './containers/Courses'
+import Projects from './containers/Projects'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <Skills />
           <Experience />
           <Courses />
+          <Projects />
         </div>
       </div>
     )

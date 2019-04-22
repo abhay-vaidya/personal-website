@@ -10,7 +10,7 @@ class Experience extends Component {
       const {
         position,
         company,
-        imageSrc,
+        logo,
         start,
         end,
         duration,
@@ -22,7 +22,7 @@ class Experience extends Component {
           key={`exp-${index}`}
           position={position}
           company={company}
-          imageSrc={imageSrc}
+          logo={logo}
           start={start}
           end={end}
           duration={duration}
@@ -42,7 +42,7 @@ class Experience extends Component {
           software engineer.
         </h1>
         {experienceSection}
-        <p className="text-2xl">
+        <p className="text-2xl mt-6">
           Check out my&nbsp;
           <a
             className="text-teal hover:text-teal-lighter"

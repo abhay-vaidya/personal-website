@@ -6,15 +6,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
 ::selection {
-  @apply bg-pink-lightest;
+  @apply bg-purple-lightest;
+}
+
+* {
+  transition: all 0.2s cubic-bezier(0.5, 0, 0.1, 1);
 }
 
 body {
   @apply bg-pure-black;
-}
-
-a {
-  transition: all ease-in 0.2s;
 }
 
 .gradient-bg {
@@ -23,6 +23,17 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   @apply bg-fixed;
+}
+
+.learn-more::after {
+  content: '→';
+  display: inline-block;
+  margin-left: 5px;
+  transition: all 0.4s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.learn-more:hover:after {
+  transform: translateX(5px);
 }
 
 .nav-wrapper {
