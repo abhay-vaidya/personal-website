@@ -10,8 +10,7 @@ export const experiences = [
     company: 'Rangle.io',
     logo: rangle,
     start: 'May 2019',
-    end: 'Present',
-    duration: '4 mos'
+    end: 'Present'
   },
   {
     position: 'Software Developer Co-op',

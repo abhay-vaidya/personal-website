@@ -31,7 +31,7 @@ export default ({
         </div>
         <div>
           <p className="text-teal-lighter">
-            {start} - {end} • {duration}
+            {`${start} - ${end}${duration ? ` • ${duration}` : ''}`}
           </p>
         </div>
       </div>
