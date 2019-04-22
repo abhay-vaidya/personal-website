@@ -5,6 +5,8 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
 import resume from '../assets/Abhay-Vaidya-Resume.pdf'
 
+const SCROLL_OFFSET = -86
+
 class NavBar extends Component {
   render() {
     return (
@@ -26,7 +28,7 @@ class NavBar extends Component {
                   to="skills"
                   spy={true}
                   smooth={true}
-                  offset={-86}
+                  offset={SCROLL_OFFSET}
                   className="nav-item md:mx-3 cursor-pointer py-2 px-4 rounded-full lg:hover:bg-black"
                 >
                   Skills
@@ -36,7 +38,7 @@ class NavBar extends Component {
                   to="experience"
                   spy={true}
                   smooth={true}
-                  offset={-86}
+                  offset={SCROLL_OFFSET}
                   className="nav-item md:mx-3 cursor-pointer py-2 px-4 rounded-full lg:hover:bg-black"
                 >
                   Experience
@@ -46,7 +48,7 @@ class NavBar extends Component {
                   to="projects"
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={SCROLL_OFFSET}
                   className="nav-item md:mx-3 cursor-pointer py-2 px-4 rounded-full lg:hover:bg-black"
                 >
                   Projects

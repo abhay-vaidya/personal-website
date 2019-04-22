@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 import Landing from './containers/Landing'
 import Skills from './containers/Skills'
 import Experience from './containers/Experience'
@@ -18,6 +19,7 @@ class App extends Component {
           <Courses />
           <Projects />
         </div>
+        <Footer />
       </div>
     )
   }

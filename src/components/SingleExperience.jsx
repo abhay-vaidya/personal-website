@@ -8,8 +8,7 @@ export default ({
   end,
   duration,
   duties,
-  technologies,
-  className
+  technologies
 }) => {
   return (
     <div
