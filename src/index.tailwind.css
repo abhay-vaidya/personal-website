@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
 ::selection {
-  @apply bg-purple-lightest;
+  @apply bg-teal-lightest;
 }
 
 * {
@@ -19,17 +19,17 @@ body {
 
 .gradient-bg {
   background-image: url('./assets/gradient.jpg');
-  background-size: cover;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  @apply bg-cover;
   @apply bg-fixed;
 }
 
 .learn-more::after {
   content: '→';
-  display: inline-block;
-  margin-left: 5px;
   transition: all 0.4s cubic-bezier(0.5, 0, 0.1, 1);
+  @apply inline-block;
+  @apply ml-2;
 }
 
 .learn-more:hover:after {
