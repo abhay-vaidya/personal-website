@@ -9,10 +9,6 @@
   @apply bg-teal-lightest;
 }
 
-* {
-  transition: all 0.2s cubic-bezier(0.5, 0, 0.1, 1);
-}
-
 body {
   @apply bg-pure-black;
 }
@@ -22,12 +18,12 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   @apply bg-cover;
-  @apply bg-fixed;
 }
 
 .learn-more::after {
   content: '→';
   transition: all 0.4s cubic-bezier(0.5, 0, 0.1, 1);
+  @apply font-sans;
   @apply inline-block;
   @apply ml-2;
 }
@@ -45,6 +41,18 @@ body {
 }
 
 @screen md {
+  * {
+    transition: all 0.2s cubic-bezier(0.5, 0, 0.1, 1);
+  }
+
+  .learn-more::after {
+    transition: all 0.4s cubic-bezier(0.5, 0, 0.1, 1);
+  }
+
+  .gradient-bg {
+    @apply bg-fixed;
+  }
+
   .section-title {
     writing-mode: vertical-lr;
     transform: scale(-1, -1);
