@@ -38,8 +38,8 @@ class Experience extends Component {
     return (
       <Section id="experience" title="Exp.">
         <h1 className="gradient-bg p-2 mb-12">
-          I've had the pleasure of working at some great companies to grow as a
-          software engineer.
+          I've had the pleasure of working at some great companies to gain
+          valuable industry experience.
         </h1>
         {experienceSection}
         <p className="text-2xl mt-6">

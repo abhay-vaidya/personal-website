@@ -64,7 +64,7 @@ export const projects = [
     name: 'Buddi',
     logo: buddi,
     description:
-      'Pet and owner matchmaking app to make the adoption process easier and help potential owners find their perfect pals.',
+      'Pet-and-owner matchmaking app to make the adoption process easier and help potential owners find their perfect pals.',
     link: 'https://github.com/abhay-vaidya/Buddi'
   },
   {
@@ -78,7 +78,7 @@ export const projects = [
     name: 'ConnectFour',
     logo: connect4,
     description:
-      'Java-based, animated game that recreates the thrill and excitement of the classic favourite.',
+      'Java-based animated game that recreates the thrill and excitement of the classic favourite.',
     link: 'https://github.com/abhay-vaidya/ConnectFour'
   }
 ]
