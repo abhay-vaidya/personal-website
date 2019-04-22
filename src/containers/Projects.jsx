@@ -7,7 +7,10 @@ class Projects extends Component {
     const projectsMarkup = projects.map((project, index) => {
       const { name, logo, description, link } = project
       return (
-        <div className="w-full md:w-1/3 mb-6 md:mb-0 md:mr-6 flex flex-col border border-black p-6 hover:border-grey-darkest">
+        <div
+          key={name}
+          className="w-full md:w-1/3 mb-6 md:mb-0 md:mr-6 flex flex-col border border-black p-6 hover:border-grey-darkest"
+        >
           <p className="text-grey-darkest">{`0${index}`}</p>
           <img
             className="w-3/4 flex-no-shrink my-6 mx-auto"
