@@ -7,9 +7,10 @@ const SCROLL_OFFSET = -86
 
 class NavBar extends Component {
   getNavLinks = () => {
-    return navigation.map((navItem) => {
+    return navigation.map((navItem, index) => {
       return (
         <Link
+          key={`nav-${index}`}
           activeClass="nav-active"
           to={navItem.toLowerCase()}
           spy={true}
@@ -24,9 +25,10 @@ class NavBar extends Component {
   }
 
   getSocialLinks = () => {
-    return socials.map(({ name, faIcon, link }) => {
+    return socials.map(({ name, faIcon, link }, index) => {
       return (
         <a
+          key={`social-${index}`}
           href={link}
           rel="noopener noreferrer"
           target="_blank"
