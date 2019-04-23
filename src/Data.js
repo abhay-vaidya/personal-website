@@ -51,28 +51,36 @@ export const experiences = [
 ]
 
 export const courses = {
-  computerScience: [
-    'Introduction to Computer Science I',
-    'Introduction to Computer Science II',
-    'Discrete Mathematics',
-    'Introduction to the Theory of Computation',
-    'Software Design',
-    'Software Tools and Systems Programming',
-    'Computer Organization',
-    'Design and Analysis of Data Structures',
-    'Introduction to Software Engineering',
-    'Principles of Programming Languages',
-    'Computability and Computational Complexity',
-    'Human-Computer Interaction',
-    'Engineering Large Software Systems',
-    'Computer and Network Security'
-  ],
-  mathematics: [
-    'Calculus I for Mathematical Sciences',
-    'Calculus II for Mathematical Sciences',
-    'Linear Algebra I',
-    'Linear Algebra II'
-  ]
+  computerScience: {
+    name: 'Computer Science',
+    id: 'cs',
+    courses: [
+      'Introduction to Computer Science I',
+      'Introduction to Computer Science II',
+      'Discrete Mathematics',
+      'Introduction to the Theory of Computation',
+      'Software Design',
+      'Software Tools and Systems Programming',
+      'Computer Organization',
+      'Design and Analysis of Data Structures',
+      'Introduction to Software Engineering',
+      'Principles of Programming Languages',
+      'Computability and Computational Complexity',
+      'Human-Computer Interaction',
+      'Engineering Large Software Systems',
+      'Computer and Network Security'
+    ]
+  },
+  mathematics: {
+    name: 'Mathematics',
+    id: 'math',
+    courses: [
+      'Calculus I for Mathematical Sciences',
+      'Calculus II for Mathematical Sciences',
+      'Linear Algebra I',
+      'Linear Algebra II'
+    ]
+  }
 }
 
 export const skills = {
