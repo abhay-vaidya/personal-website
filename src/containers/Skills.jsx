@@ -7,6 +7,7 @@ class Skills extends Component {
     const innerElems = skillList.map((skill, index) => (
       <li key={`${keyPrefix}-${index}`}>{skill}</li>
     ))
+
     return (
       <div className="flex flex-col md:flex-row justify-end mb-6">
         <h1 className="gradient-bg mb-4 md:mr-4 md:mt-2">{caption}</h1>
