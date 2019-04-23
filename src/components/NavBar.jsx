@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faFile } from '@fortawesome/free-solid-svg-icons'
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons'
 import resume from '../assets/Abhay-Vaidya-Resume.pdf'
 
 const SCROLL_OFFSET = -86
@@ -80,7 +80,7 @@ class NavBar extends Component {
                   title="Resume"
                   className="nav-item md:mx-3 py-2 px-4 md:px-0"
                 >
-                  <FontAwesomeIcon icon={faFile} color="white" />
+                  <FontAwesomeIcon icon={faFileAlt} color="white" />
                 </a>
               </div>
             </div>
