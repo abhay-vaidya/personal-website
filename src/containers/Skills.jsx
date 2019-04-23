@@ -16,6 +16,7 @@ class Skills extends Component {
       </div>
     )
   }
+
   render() {
     const { design, code } = skills
     const designSkillSection = this.getSkillsSection(
@@ -28,6 +29,7 @@ class Skills extends Component {
       'and build them with',
       'code'
     )
+
     return (
       <Section title="Skills" id="skills">
         {designSkillSection}

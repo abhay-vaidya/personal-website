@@ -7,17 +7,13 @@ import resume from '../assets/Abhay-Vaidya-Resume.pdf'
 class Experience extends Component {
   getExperienceSection = () => {
     return experiences.map((exp, index) => {
-      return (
-        <SingleExperience
-          key={`exp-${index}`}
-          {...exp}
-        />
-      )
+      return <SingleExperience key={`exp-${index}`} {...exp} />
     })
   }
 
   render() {
     const experienceSection = this.getExperienceSection()
+
     return (
       <Section id="experience" title="Exp.">
         <h1 className="gradient-bg p-2 mb-12">

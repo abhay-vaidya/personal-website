@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade'
 class Section extends Component {
   render() {
     const { title, id, children } = this.props
+
     return (
       <Fade bottom>
         <div>

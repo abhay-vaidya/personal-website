@@ -31,8 +31,10 @@ class Projects extends Component {
     })
     return <div className="flex flex-col md:flex-row">{projectsMarkup}</div>
   }
+
   render() {
     const projectsSection = this.getProjectsSection()
+
     return (
       <Section title="Projects" id="projects">
         {projectsSection}

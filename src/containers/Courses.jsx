@@ -14,6 +14,7 @@ class Courses extends Component {
       </div>
     )
   }
+
   render() {
     const { computerScience, mathematics } = courses
     const csSection = this.getCourseSection(
@@ -26,6 +27,7 @@ class Courses extends Component {
       mathematics,
       'math'
     )
+
     return (
       <Section title="Courses" id="courses">
         <h1 className="gradient-bg p-2 mb-12">
