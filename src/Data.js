@@ -3,6 +3,27 @@ import airmilesImg from './assets/airmiles.png'
 import buddiImg from './assets/buddi.png'
 import turfwarsImg from './assets/turfwars.png'
 import connect4Img from './assets/connect4.png'
+import resume from './assets/Abhay-Vaidya-Resume.pdf'
+
+export const navigation = ['Skills', 'Experience', 'Projects']
+
+export const socials = [
+  {
+    name: 'GitHub',
+    faIcon: ['fab', 'github'],
+    link: 'https://github.com/abhay-vaidya'
+  },
+  {
+    name: 'LinkedIn',
+    faIcon: ['fab', 'linkedin'],
+    link: 'https://linkedin.com/in/abhay-vaidya'
+  },
+  {
+    name: 'Resume',
+    faIcon: ['fas', 'file-alt'],
+    link: resume
+  }
+]
 
 export const experiences = [
   {
