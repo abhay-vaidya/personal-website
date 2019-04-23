@@ -59,6 +59,7 @@ class NavBar extends Component {
                   href="https://github.com/abhay-vaidya"
                   rel="noopener noreferrer"
                   target="_blank"
+                  title="GitHub"
                   className="nav-item md:mx-3 py-2 px-4 md:px-0"
                 >
                   <FontAwesomeIcon icon={faGithub} color="white" />
@@ -67,6 +68,7 @@ class NavBar extends Component {
                   href="https://linkedin.com/in/abhay-vaidya"
                   rel="noopener noreferrer"
                   target="_blank"
+                  title="LinkedIn"
                   className="nav-item md:mx-3 py-2 px-4 md:px-0"
                 >
                   <FontAwesomeIcon icon={faLinkedin} color="white" />
@@ -75,6 +77,7 @@ class NavBar extends Component {
                   href={resume}
                   rel="noopener noreferrer"
                   target="_blank"
+                  title="Resume"
                   className="nav-item md:mx-3 py-2 px-4 md:px-0"
                 >
                   <FontAwesomeIcon icon={faFile} color="white" />
