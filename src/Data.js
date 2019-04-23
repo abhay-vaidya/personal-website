@@ -1,21 +1,21 @@
-import rangle from './assets/rangle.jpg'
-import airmiles from './assets/airmiles.png'
-import buddi from './assets/buddi.png'
-import turfwars from './assets/turfwars.png'
-import connect4 from './assets/connect4.png'
+import rangleImg from './assets/rangle.jpg'
+import airmilesImg from './assets/airmiles.png'
+import buddiImg from './assets/buddi.png'
+import turfwarsImg from './assets/turfwars.png'
+import connect4Img from './assets/connect4.png'
 
 export const experiences = [
   {
     position: 'Software Developer Co-op',
     company: 'Rangle.io',
-    logo: rangle,
+    logo: rangleImg,
     start: 'May 2019',
     end: 'Present'
   },
   {
     position: 'Software Developer Co-op',
     company: 'LoyaltyOne - AIR MILES Reward Program',
-    logo: airmiles,
+    logo: airmilesImg,
     start: 'May 2018',
     end: 'Dec. 2018',
     duration: '8 mos',
@@ -62,21 +62,21 @@ export const skills = {
 export const projects = [
   {
     name: 'Buddi',
-    logo: buddi,
+    logo: buddiImg,
     description:
       'Pet-and-owner matchmaking app to make the adoption process easier and help potential owners find their perfect pals.',
     link: 'https://github.com/abhay-vaidya/Buddi'
   },
   {
     name: 'TurfWars',
-    logo: turfwars,
+    logo: turfwarsImg,
     description:
       "Verilog version of Ninendo's hit Splatoon game for the Altera DE2 board with VGA and keyboard support.",
     link: 'https://github.com/abhay-vaidya/TurfWars'
   },
   {
     name: 'ConnectFour',
-    logo: connect4,
+    logo: connect4Img,
     description:
       'Java-based animated game that recreates the thrill and excitement of the classic favourite.',
     link: 'https://github.com/abhay-vaidya/ConnectFour'

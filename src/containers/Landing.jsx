@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import profile from '../assets/profile.png'
+import profileImg from '../assets/profile.png'
 
 class Landing extends Component {
   render() {
@@ -18,7 +18,7 @@ class Landing extends Component {
           </p>
         </div>
         <div className="w-full md:w-2/3">
-          <img className="md:ml-6" src={profile} alt="Abhay" />
+          <img className="md:ml-6" src={profileImg} alt="Abhay" />
         </div>
       </section>
     )
