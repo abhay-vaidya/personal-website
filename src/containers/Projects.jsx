@@ -9,7 +9,7 @@ class Projects extends Component {
       return (
         <div
           key={name}
-          className="w-full md:w-1/3 mb-6 md:mb-0 md:mr-6 flex flex-col border border-black p-6 hover:border-grey-darkest"
+          className="w-full md:w-1/3 mb-6 md:mb-0 md:mr-6 flex flex-col border border-black p-6 lg:hover:border-grey-darkest"
         >
           <p className="text-grey-darkest">{`0${index}`}</p>
           <img
