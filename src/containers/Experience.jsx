@@ -7,27 +7,10 @@ import resume from '../assets/Abhay-Vaidya-Resume.pdf'
 class Experience extends Component {
   getExperienceSection = () => {
     return experiences.map((exp, index) => {
-      const {
-        position,
-        company,
-        logo,
-        start,
-        end,
-        duration,
-        duties,
-        technologies
-      } = exp
       return (
         <SingleExperience
           key={`exp-${index}`}
-          position={position}
-          company={company}
-          logo={logo}
-          start={start}
-          end={end}
-          duration={duration}
-          duties={duties}
-          technologies={technologies}
+          {...exp}
         />
       )
     })
