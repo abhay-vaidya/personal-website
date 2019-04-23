@@ -1,6 +1,6 @@
 # Personal Website
 
-`https://abhayvaidya.com`
+https://abhayvaidya.com
 
 Built with React.js and Tailwind CSS.
 
