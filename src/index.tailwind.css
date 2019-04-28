@@ -6,10 +6,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
 ::selection {
-  @apply bg-teal-lightest;
+  @apply bg-teal-lighter;
 }
 
-body {
+html {
+  @apply font-sans;
+  @apply leading-normal;
+  @apply text-white;
   @apply bg-pure-black;
 }
 
