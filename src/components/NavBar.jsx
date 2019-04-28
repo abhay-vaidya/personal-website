@@ -46,8 +46,8 @@ class NavBar extends Component {
     const socialLinks = this.getSocialLinks()
 
     return (
-      <nav className="nav-wrapper fixed w-full z-50 font-bold select-none">
-        <div className="p-6 flex-col md:flex-row flex md:items-center text-center justify-between container mx-auto">
+      <header className="nav-wrapper fixed w-full z-50 font-bold select-none">
+        <nav className="p-6 flex-col md:flex-row flex md:items-center text-center justify-between container mx-auto">
           <Link
             to="landing"
             spy={true}
@@ -62,8 +62,8 @@ class NavBar extends Component {
               <div>{socialLinks}</div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
     )
   }
 }

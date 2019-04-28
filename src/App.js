@@ -8,22 +8,22 @@ import Courses from './containers/Courses'
 import Projects from './containers/Projects'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons'
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library } from '@fortawesome/fontawesome-svg-core'
 
 library.add(faGithub, faLinkedin, faFileAlt)
 
 class App extends Component {
   render() {
     return (
-      <div className="font-sans leading-normal text-white">
+      <div>
         <NavBar />
-        <div className="container mx-auto">
+        <main className="container mx-auto">
           <Landing />
           <Skills />
           <Experience />
           <Courses />
           <Projects />
-        </div>
+        </main>
         <Footer />
       </div>
     )
