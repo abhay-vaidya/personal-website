@@ -11,7 +11,7 @@ export default ({
   technologies
 }) => {
   return (
-    <div
+    <article
       className={
         'p-6 bg-teal-pure-darkest border border-teal-darker flex flex-col mb-6'
       }
@@ -47,6 +47,6 @@ export default ({
           <p>{technologies}</p>
         </div>
       )}
-    </div>
+    </article>
   )
 }
