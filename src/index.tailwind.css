@@ -16,6 +16,10 @@ html {
   @apply bg-pure-black;
 }
 
+img {
+  @apply select-none;
+}
+
 .gradient-bg {
   background-image: url('./assets/gradient.jpg');
   background-clip: text;
@@ -44,7 +48,8 @@ html {
 }
 
 @screen md {
-  * {
+  .nav-item,
+  .border-box {
     transition: all 0.2s cubic-bezier(0.5, 0, 0.1, 1);
   }
 
