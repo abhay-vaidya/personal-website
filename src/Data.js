@@ -29,6 +29,7 @@ export const experiences = [
   {
     position: 'Software Developer Co-op',
     company: 'Rangle.io',
+    companyLink: 'https://rangle.io/',
     logo: rangleImg,
     start: 'May 2019',
     end: 'Present'
@@ -36,6 +37,7 @@ export const experiences = [
   {
     position: 'Software Developer Co-op',
     company: 'LoyaltyOne - AIR MILES Reward Program',
+    companyLink: 'https://www.loyalty.com/',
     logo: airmilesImg,
     start: 'May 2018',
     end: 'Dec. 2018',

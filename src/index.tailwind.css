@@ -48,7 +48,7 @@ img {
 }
 
 @screen md {
-  .nav-item,
+  a,
   .border-box {
     transition: all 0.2s cubic-bezier(0.5, 0, 0.1, 1);
   }

@@ -3,6 +3,7 @@ import React from 'react'
 export default ({
   position,
   company,
+  companyLink,
   logo,
   start,
   end,
@@ -25,7 +26,14 @@ export default ({
           <img src={logo} alt={company} className="w-16 h-16 mr-4" />
           <div>
             <p className="font-bold">{position}</p>
-            <p className="text-teal-lighter">{company}</p>
+            <a
+              className="text-teal-lighter lg:hover:text-teal-lightest"
+              href={companyLink}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {company}
+            </a>
           </div>
         </div>
         <div>
