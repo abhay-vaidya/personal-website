@@ -6,7 +6,9 @@ import { projects } from '../Data'
 class Projects extends Component {
   getProjectsSection = () => {
     const projectsMarkup = projects.map((project, index) => {
-      return <SingleProject {...project} index={index} />
+      return (
+        <SingleProject key={`project-${index}`} {...project} index={index} />
+      )
     })
     return <div className="flex flex-col md:flex-row">{projectsMarkup}</div>
   }
