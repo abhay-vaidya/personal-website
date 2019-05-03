@@ -47,6 +47,21 @@ img {
   @apply bg-black;
 }
 
+.scroll-arrow {
+  animation: up-down 1s ease-in-out 2s infinite alternate;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+    @apply opacity-100;
+  }
+  100% {
+    transform: translateY(-10px);
+    @apply opacity-0;
+  }
+}
+
 @screen md {
   a,
   .border-box {

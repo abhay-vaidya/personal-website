@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ScrollArrow from '../components/ScrollArrow'
 import profileImg from '../assets/profile.png'
 
 class Landing extends Component {
@@ -20,6 +21,7 @@ class Landing extends Component {
         <div className="w-full md:w-2/3">
           <img className="md:ml-6" src={profileImg} alt="Abhay" />
         </div>
+        <ScrollArrow />
       </section>
     )
   }
