@@ -57,26 +57,17 @@ img {
 }
 
 @keyframes up-down {
-  0% {
+  from {
     transform: translateY(0);
     @apply opacity-100;
   }
-  100% {
+  to {
     transform: translateY(-10px);
     @apply opacity-0;
   }
 }
 
 @screen md {
-  a,
-  .border-box {
-    transition: all 0.2s cubic-bezier(0.5, 0, 0.1, 1);
-  }
-
-  .learn-more::after {
-    transition: all 0.4s cubic-bezier(0.5, 0, 0.1, 1);
-  }
-
   .gradient-bg {
     @apply bg-fixed;
   }
@@ -84,5 +75,16 @@ img {
   .section-title {
     writing-mode: vertical-lr;
     transform: scale(-1, -1);
+  }
+}
+
+@screen lg {
+  a,
+  .border-box {
+    transition: all 0.2s cubic-bezier(0.5, 0, 0.1, 1);
+  }
+
+  .learn-more::after {
+    transition: all 0.4s cubic-bezier(0.5, 0, 0.1, 1);
   }
 }
