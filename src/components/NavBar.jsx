@@ -33,9 +33,9 @@ class NavBar extends Component {
           rel="noopener noreferrer"
           target="_blank"
           title={name}
-          className="md:mx-3 py-2 px-4 md:px-0"
+          className="mx-3 hover:text-teal-400"
         >
-          <FontAwesomeIcon icon={faIcon} color="white" />
+          <FontAwesomeIcon icon={faIcon} />
         </a>
       )
     })
