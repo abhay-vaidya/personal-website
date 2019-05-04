@@ -1,4 +1,4 @@
-@tailwind preflight;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
@@ -6,14 +6,19 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
 ::selection {
-  @apply bg-teal-lighter;
+  @apply bg-teal-300;
 }
 
 html {
   @apply font-sans;
   @apply leading-normal;
   @apply text-white;
-  @apply bg-pure-black;
+  @apply bg-black;
+}
+
+h2 {
+  @apply font-bold;
+  @apply text-3xl;
 }
 
 img {
@@ -44,7 +49,7 @@ img {
 }
 
 .nav-active {
-  @apply bg-black;
+  @apply bg-gray-800;
 }
 
 .scroll-arrow {

@@ -8,9 +8,9 @@ class Courses extends Component {
       <li key={`${id}-${index}`}>{course}</li>
     ))
     return (
-      <div className="mb-4 md:mr-6">
-        <h3 className="mb-6 ml-8">{name}</h3>
-        <ul>{innerElems}</ul>
+      <div className="mb-8 lg:mr-6">
+        <h3 className="mb-6 font-bold text-2xl">{name}</h3>
+        <ul className="list-disc pl-6 md:pl-0">{innerElems}</ul>
       </div>
     )
   }
@@ -22,12 +22,12 @@ class Courses extends Component {
 
     return (
       <Section title="Courses" id="courses">
-        <h1 className="gradient-bg p-2 mb-12">
+        <h2 className="gradient-bg p-2 mb-12">
           I'm constantly learning. Here are some courses I've taken that have
           helped me build a strong foundation in computer science and software
           engineering.
-        </h1>
-        <div className="flex flex-col md:flex-row justify-center">
+        </h2>
+        <div className="flex flex-col lg:flex-row justify-center">
           {csSection}
           {mathSection}
         </div>

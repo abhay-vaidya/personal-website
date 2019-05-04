@@ -10,8 +10,8 @@ class Skills extends Component {
 
     return (
       <div className="flex flex-col md:flex-row justify-end mb-6">
-        <h1 className="gradient-bg mb-4 md:mr-4 md:mt-2">{caption}</h1>
-        <ul className="border-box list-reset flex flex-col text-2xl py-3 px-5 border border-black lg:hover:border-grey-darkest">
+        <h2 className="gradient-bg mb-4 md:mr-4 md:mt-2">{caption}</h2>
+        <ul className="border-box flex flex-col text-2xl py-3 px-5 border border-gray-800 lg:hover:border-gray-700">
           {innerElems}
         </ul>
       </div>

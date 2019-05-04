@@ -16,7 +16,7 @@ class NavBar extends Component {
           spy={true}
           smooth={true}
           offset={SCROLL_OFFSET}
-          className="md:mx-3 cursor-pointer py-2 px-4 rounded-full lg:hover:bg-black"
+          className="md:mx-3 cursor-pointer py-2 px-4 rounded-full lg:hover:bg-gray-800"
         >
           {navItem}
         </Link>

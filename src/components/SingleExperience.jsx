@@ -13,21 +13,19 @@ export default ({
 }) => {
   return (
     <article
-      className={
-        'p-6 bg-teal-pure-darkest border border-teal-darker flex flex-col mb-6'
-      }
+      className={'p-6 bg-gray-900 border border-gray-700 flex flex-col mb-6'}
     >
       <div
-        className={`flex flex-col md:flex-row justify-between items-center ${
+        className={`flex flex-col lg:flex-row justify-between items-center ${
           duties ? 'mb-8' : ''
         }`}
       >
-        <div className="flex mb-4 md:mb-0 items-center">
+        <div className="flex mb-4 lg:mb-0 items-center">
           <img src={logo} alt={company} className="w-16 h-16 mr-4" />
           <div>
             <p className="font-bold">{position}</p>
             <a
-              className="text-teal-lighter lg:hover:text-teal-lightest"
+              className="text-gray-500 lg:hover:text-gray-100"
               href={companyLink}
               rel="noopener noreferrer"
               target="_blank"
@@ -37,13 +35,13 @@ export default ({
           </div>
         </div>
         <div>
-          <p className="text-teal-lighter">
+          <p className="text-gray-500">
             {`${start} - ${end}${duration ? ` • ${duration}` : ''}`}
           </p>
         </div>
       </div>
       {duties && (
-        <ul className="mb-8">
+        <ul className="list-disc pl-6 md:pl-10 mb-8">
           {duties.map((duty, index) => (
             <li key={`duty-${index}`}>{duty}</li>
           ))}
@@ -51,7 +49,9 @@ export default ({
       )}
       {technologies && (
         <div>
-          <p className="font-bold">Tools & Technologies:</p>
+          <p className="select-none text-gray-500 mb-2">
+            Tools & Technologies:
+          </p>
           <p>{technologies}</p>
         </div>
       )}

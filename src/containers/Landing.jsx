@@ -10,7 +10,7 @@ class Landing extends Component {
         className="flex flex-col md:flex-row w-full min-h-screen items-center justify-center p-8"
       >
         <div className="w-full mt-24 md:mt-0 md:w-1/3">
-          <h1 className="leading-tight pb-6 text-5xl gradient-bg">
+          <h1 className="gradient-bg leading-tight pb-6 text-5xl font-bold">
             Hi, I'm Abhay.
           </h1>
           <p>
