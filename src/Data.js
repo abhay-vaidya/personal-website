@@ -87,7 +87,7 @@ export const courses = {
 
 export const skills = {
   design: ['Adobe XD', 'Photoshop', 'Illustrator'],
-  code: ['JavaScript', 'Python', 'Java', '+ More']
+  code: ['JavaScript', 'Python', 'Java', '+ more']
 }
 
 export const projects = [

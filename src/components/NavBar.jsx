@@ -16,7 +16,7 @@ class NavBar extends Component {
           spy={true}
           smooth={true}
           offset={SCROLL_OFFSET}
-          className="md:mx-3 cursor-pointer py-2 px-4 rounded-full lg:hover:bg-black"
+          className="md:mx-3 cursor-pointer py-2 px-4 rounded-full lg:hover:bg-gray-800"
         >
           {navItem}
         </Link>
@@ -33,9 +33,9 @@ class NavBar extends Component {
           rel="noopener noreferrer"
           target="_blank"
           title={name}
-          className="md:mx-3 py-2 px-4 md:px-0"
+          className="mx-3 hover:text-teal-400"
         >
-          <FontAwesomeIcon icon={faIcon} color="white" />
+          <FontAwesomeIcon icon={faIcon} />
         </a>
       )
     })

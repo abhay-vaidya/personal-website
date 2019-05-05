@@ -29,7 +29,7 @@ class ScrollArrow extends Component {
         strokeWidth="1"
         strokeLinecap="round"
         strokeLinejoin="arcs"
-        className={`scroll-arrow absolute pin-b text-grey-dark stroke-current ${
+        className={`scroll-arrow absolute bottom-0 text-gray-500 stroke-current ${
           isHidden ? 'invisible' : ''
         }`}
       >

@@ -10,7 +10,7 @@ class Projects extends Component {
         <SingleProject key={`project-${index}`} {...project} index={index} />
       )
     })
-    return <div className="flex flex-col md:flex-row">{projectsMarkup}</div>
+    return <div className="flex flex-col lg:flex-row">{projectsMarkup}</div>
   }
 
   render() {
@@ -22,7 +22,7 @@ class Projects extends Component {
         <p className="text-2xl mt-12">
           Check out my&nbsp;
           <a
-            className="text-teal hover:text-teal-lighter"
+            className="hover:text-teal-400 underline"
             href="https://github.com/abhay-vaidya"
             rel="noopener noreferrer"
             target="_blank"
