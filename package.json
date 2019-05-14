@@ -31,6 +31,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "tailwindcss": "^1.0.0-beta.8"
+    "tailwindcss": "^1.0.1"
   }
 }
