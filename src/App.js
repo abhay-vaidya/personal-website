@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import Landing from './containers/Landing'
@@ -12,22 +12,20 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 library.add(faGithub, faLinkedin, faFileAlt)
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <NavBar />
-        <main className="container mx-auto">
-          <Landing />
-          <Skills />
-          <Experience />
-          <Courses />
-          <Projects />
-        </main>
-        <Footer />
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <div>
+      <NavBar />
+      <main className="container mx-auto">
+        <Landing />
+        <Skills />
+        <Experience />
+        <Courses />
+        <Projects />
+      </main>
+      <Footer />
+    </div>
+  )
 }
 
 export default App
