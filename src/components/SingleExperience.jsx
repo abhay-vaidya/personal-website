@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({
+const SingleExperience = ({
   position,
   company,
   companyLink,
@@ -58,3 +58,5 @@ export default ({
     </article>
   )
 }
+
+export default SingleExperience

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ name, logo, description, link, index }) => {
+const SingleProject = ({ name, logo, description, link, index }) => {
   return (
     <div
       key={name}
@@ -20,3 +20,5 @@ export default ({ name, logo, description, link, index }) => {
     </div>
   )
 }
+
+export default SingleProject
