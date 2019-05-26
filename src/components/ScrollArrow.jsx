@@ -24,7 +24,7 @@ const ScrollArrow = () => {
       fill="transparent"
       strokeLinecap="round"
       strokeLinejoin="arcs"
-      className={`scroll-arrow absolute bottom-3 text-gray-500 stroke-current ${
+      className={`scroll-arrow absolute bottom-4 text-gray-500 stroke-current ${
         isHidden ? 'invisible' : ''
       }`}
     >
