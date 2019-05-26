@@ -6,7 +6,9 @@ class ScrollArrow extends Component {
   }
 
   hideArrow = () => {
-    this.setState({ isHidden: true })
+    this.setState({ isHidden: true }, () => {
+      window.removeEventListener('scroll', this.hideArrow)
+    })
   }
 
   componentDidMount() {
