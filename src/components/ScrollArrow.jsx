@@ -21,9 +21,10 @@ const ScrollArrow = () => {
       height="48"
       viewBox="0 0 24 24"
       strokeWidth="1"
+      fill="transparent"
       strokeLinecap="round"
       strokeLinejoin="arcs"
-      className={`scroll-arrow absolute bottom-0 text-gray-500 stroke-current ${
+      className={`scroll-arrow absolute bottom-3 text-gray-500 stroke-current ${
         isHidden ? 'invisible' : ''
       }`}
     >
