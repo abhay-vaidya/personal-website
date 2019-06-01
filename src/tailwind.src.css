@@ -3,7 +3,7 @@
 @tailwind utilities;
 @tailwind screens;
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap');
 
 ::selection {
   @apply bg-teal-300;
