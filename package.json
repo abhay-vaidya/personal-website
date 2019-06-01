@@ -14,9 +14,12 @@
     "react-scroll": "^1.7.11"
   },
   "scripts": {
-    "prestart": "tailwind build ./src/index.tailwind.css -o ./src/index.css",
+    "tailwind": "tailwind build ./src/tailwind.src.css -o ./src/index.css",
+    "purgecss": "purgecss -c purgecss.config.js -o src",
+    "css": "npm run tailwind && npm run purgecss",
+    "prestart": "npm run css",
     "start": "react-scripts start",
-    "prebuild": "tailwind build ./src/index.tailwind.css -o ./src/index.css",
+    "prebuild": "npm run css",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -31,6 +34,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "tailwindcss": "^1.0.1"
+    "purgecss": "^1.3.0",
+    "tailwindcss": "^1.0.2"
   }
 }
