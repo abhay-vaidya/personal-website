@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from './Section'
-import SingleProject from '../components/SingleProject'
+import { SingleProject } from '../components'
 import { projects } from '../Data'
 
 const renderProjectsSection = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import ScrollArrow from '../components/ScrollArrow'
+import { ScrollArrow } from '../components'
 import profileImg from '../assets/profile.png'
 
 const Landing = () => {

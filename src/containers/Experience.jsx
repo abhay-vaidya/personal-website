@@ -1,5 +1,5 @@
 import React from 'react'
-import SingleExperience from '../components/SingleExperience'
+import { SingleExperience } from '../components'
 import Section from './Section'
 import { experiences } from '../Data'
 import resume from '../assets/Abhay-Vaidya-Resume.pdf'
