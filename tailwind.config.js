@@ -3,7 +3,9 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   theme: {
     fontFamily: {
-      sans: ['Poppins', ...defaultTheme.fontFamily.sans]
+      sans: ['GTAmerica-Regular', ...defaultTheme.fontFamily.sans],
+      expanded: ['GTAmerica-ExpandedBold', ...defaultTheme.fontFamily.sans],
+      mono: ['GTAmericaMono-Regular', ...defaultTheme.fontFamily.mono]
     },
     extend: {
       fontSize: {
