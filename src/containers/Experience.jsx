@@ -1,17 +1,17 @@
-import React from 'react'
-import { SingleExperience } from '../components'
-import Section from './Section'
-import { experiences } from '../Data'
-import resume from '../assets/Abhay-Vaidya-Resume.pdf'
+import React from "react";
+import { SingleExperience } from "../components";
+import Section from "./Section";
+import { experiences } from "../Data";
+import resume from "../assets/Abhay-Vaidya-Resume.pdf";
 
 const renderExperienceSection = () => {
   return experiences.map((exp, index) => {
-    return <SingleExperience key={`exp-${index}`} {...exp} />
-  })
-}
+    return <SingleExperience key={`exp-${index}`} {...exp} />;
+  });
+};
 
 const Experience = () => {
-  const experienceSection = renderExperienceSection()
+  const experienceSection = renderExperienceSection();
 
   return (
     <Section id="experience" title="Exp.">
@@ -23,7 +23,7 @@ const Experience = () => {
       <p className="text-2xl mt-6">
         Check out my&nbsp;
         <a
-          className="hover:text-teal-400 underline"
+          className="hover:text-purple-400 underline"
           href={resume}
           rel="noopener noreferrer"
           target="_blank"
@@ -33,7 +33,7 @@ const Experience = () => {
         &nbsp;to learn more.
       </p>
     </Section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

@@ -1,18 +1,18 @@
-import React, { useState, useCallback, useEffect } from 'react'
+import React, { useState, useCallback, useEffect } from "react";
 
 const ScrollArrow = () => {
-  const [isHidden, setHidden] = useState(false)
+  const [isHidden, setHidden] = useState(false);
 
   const hideArrow = useCallback(() => {
-    setHidden(true)
-  }, [isHidden])
+    setHidden(true);
+  }, [isHidden]);
 
   useEffect(() => {
-    window.addEventListener('scroll', hideArrow)
+    window.addEventListener("scroll", hideArrow);
     return () => {
-      window.removeEventListener('scroll', hideArrow)
-    }
-  }, [])
+      window.removeEventListener("scroll", hideArrow);
+    };
+  }, []);
 
   return (
     <svg
@@ -25,12 +25,12 @@ const ScrollArrow = () => {
       strokeLinecap="round"
       strokeLinejoin="arcs"
       className={`scroll-arrow absolute bottom-4 text-gray-500 stroke-current ${
-        isHidden ? 'invisible' : ''
+        isHidden ? "invisible" : ""
       }`}
     >
       <path d="M6 9l6 6 6-6" />
     </svg>
-  )
-}
+  );
+};
 
-export default ScrollArrow
+export default ScrollArrow;

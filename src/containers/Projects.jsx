@@ -1,17 +1,19 @@
-import React from 'react'
-import Section from './Section'
-import { SingleProject } from '../components'
-import { projects } from '../Data'
+import React from "react";
+import Section from "./Section";
+import { SingleProject } from "../components";
+import { projects } from "../Data";
 
 const renderProjectsSection = () => {
   const projectsMarkup = projects.map((project, index) => {
-    return <SingleProject key={`project-${index}`} {...project} index={index} />
-  })
-  return <div className="flex flex-col lg:flex-row">{projectsMarkup}</div>
-}
+    return (
+      <SingleProject key={`project-${index}`} {...project} index={index} />
+    );
+  });
+  return <div className="flex flex-col lg:flex-row">{projectsMarkup}</div>;
+};
 
 const Projects = () => {
-  const projectsSection = renderProjectsSection()
+  const projectsSection = renderProjectsSection();
 
   return (
     <Section title="Projects" id="projects">
@@ -19,7 +21,7 @@ const Projects = () => {
       <p className="text-2xl mt-12">
         Check out my&nbsp;
         <a
-          className="hover:text-teal-400 underline"
+          className="hover:text-purple-400 underline"
           href="https://github.com/abhay-vaidya"
           rel="noopener noreferrer"
           target="_blank"
@@ -29,7 +31,7 @@ const Projects = () => {
         &nbsp;for more.
       </p>
     </Section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

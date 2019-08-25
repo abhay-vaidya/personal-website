@@ -18,6 +18,7 @@
     "purgecss": "purgecss -c purgecss.config.js -o src",
     "css": "npm run tailwind && npm run purgecss",
     "prestart": "npm run css",
+    "dev": "npm run tailwind && react-scripts start",
     "start": "react-scripts start",
     "prebuild": "npm run css",
     "build": "react-scripts build",

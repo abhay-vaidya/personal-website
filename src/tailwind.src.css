@@ -4,42 +4,35 @@
 @tailwind screens;
 
 @font-face {
-  font-family: 'GTAmerica-ExpandedBold';
-  src: url('./assets/fonts/GTAmerica-ExpandedBold_2.woff') format('woff');
+  font-family: 'GT-America-Expanded';
+  src: url('./assets/fonts/GT-America-Expanded-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GTAmerica-Regular';
-  src: url('./assets/fonts/GTAmerica-Regular_2.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GTAmerica-Regular';
-  src: url('./assets/fonts/GTAmerica-Bold_1.woff') format('woff');
+  font-family: 'GT-America-Expanded';
+  src: url('./assets/fonts/GT-America-Expanded-Bold.woff') format('woff');
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'GTAmericaMono-Regular';
-  src: url('./assets/fonts/GTAmericaMono-Regular_1.woff') format('woff');
+  font-family: 'GT-America-Extended';
+  src: url('./assets/fonts/GT-America-Extended-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GTAmericaMono-Regular';
-  src: url('./assets/fonts/GTAmericaMono-Medium_3.woff') format('woff');
-  font-weight: 500;
+  font-family: 'GT-America-Extended';
+  src: url('./assets/fonts/GT-America-Extended-Bold.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
 }
 
 ::selection {
-  @apply bg-teal-300;
+  @apply bg-purple-300;
 }
 
 html {
@@ -51,6 +44,7 @@ html {
 
 h2 {
   @apply font-expanded;
+  @apply font-bold;
   @apply text-3xl;
 }
 
@@ -70,7 +64,7 @@ img {
 }
 
 .nav-active {
-  @apply bg-gray-800;
+  @apply border-white;
 }
 
 .scroll-arrow {
@@ -100,12 +94,7 @@ img {
 }
 
 @screen lg {
-  a,
-  .border-box {
+  a {
     transition: all 0.2s cubic-bezier(0.5, 0, 0.1, 1);
-  }
-
-  .learn-more::after {
-    transition: all 0.4s cubic-bezier(0.5, 0, 0.1, 1);
   }
 }
