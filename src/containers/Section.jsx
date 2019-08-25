@@ -8,7 +8,7 @@ const Section = ({ title, id, children }) => {
         <hr className="border border-gray-900" />
         <section
           id={id}
-          className="p-12 flex flex-col md:flex-row w-full items-center justify-between"
+          className="p-8 lg:p-12 flex flex-col md:flex-row w-full items-center justify-between"
         >
           <div className="w-full md:w-1/6 self-start">
             {title && (
