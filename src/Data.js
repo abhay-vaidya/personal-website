@@ -27,7 +27,7 @@ export const socials = [
 
 export const experiences = [
   {
-    position: "Software Developer Co-op",
+    position: "Software Developer Intern",
     company: "Rangle.io",
     companyLink: "https://rangle.io/",
     logo: rangleImg,
@@ -41,7 +41,7 @@ export const experiences = [
     technologies: "Node.js, React, Redux, Express, Bash"
   },
   {
-    position: "Software Developer Co-op",
+    position: "Software Developer Intern",
     company: "LoyaltyOne (AIR MILES)",
     companyLink: "https://www.loyalty.com/",
     logo: airmilesImg,
