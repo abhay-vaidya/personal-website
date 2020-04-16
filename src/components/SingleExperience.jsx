@@ -1,8 +1,10 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 const SingleExperience = ({
   position,
   company,
+  location,
   companyLink,
   logo,
   start,
@@ -32,6 +34,7 @@ const SingleExperience = ({
             >
               {company}
             </a>
+            <p className="text-gray-500 text-xs">{location}</p>
           </div>
         </div>
         <div>
@@ -59,6 +62,19 @@ const SingleExperience = ({
       )}
     </article>
   );
+};
+
+SingleExperience.propTypes = {
+  position: PropTypes.string.isRequired,
+  company: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  companyLink: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
+  start: PropTypes.string.isRequired,
+  end: PropTypes.string.isRequired,
+  duration: PropTypes.string,
+  duties: PropTypes.array,
+  technologies: PropTypes.string
 };
 
 export default SingleExperience;
