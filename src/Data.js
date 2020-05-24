@@ -38,7 +38,7 @@ export const experiences = [
     duration: "4 mos",
     duties: [
       "Engineered tools and libraries used by all HubSpot products to support different locales and regions as member of Internationalization (I18n) team",
-      "Contributed to and launched new tool allowing PMs and UX writers to add and modify product copy without engineering involvement",
+      "Launched new tool allowing PMs and UX writers to add and modify product copy without engineering involvement",
       "Delivered full-stack feature for engineers to notify translations team of urgent copy requests"
     ],
     technologies: "JavaScript, React, Redux, Java"
