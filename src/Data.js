@@ -1,3 +1,4 @@
+import hubspotImg from "./assets/hubspot.png";
 import rangleImg from "./assets/rangle.jpg";
 import airmilesImg from "./assets/airmiles.png";
 import buddiImg from "./assets/buddi.png";
@@ -27,8 +28,25 @@ export const socials = [
 
 export const experiences = [
   {
+    position: "Software Engineering Intern",
+    company: "HubSpot",
+    location: "Boston, MA",
+    companyLink: "https://hubspot.com/",
+    logo: hubspotImg,
+    start: "Jan. 2020",
+    end: "Apr. 2020",
+    duration: "4 mos",
+    duties: [
+      "Engineered tools and libraries used by all HubSpot products to support different locales and regions as member of Internationalization (I18n) team",
+      "Launched new tool allowing PMs and UX writers to add and modify product copy without engineering involvement",
+      "Delivered full-stack feature for engineers to notify translations team of urgent copy requests"
+    ],
+    technologies: "JavaScript, React, Redux, Java"
+  },
+  {
     position: "Software Developer Intern",
     company: "Rangle.io",
+    location: "Toronto, ON",
     companyLink: "https://rangle.io/",
     logo: rangleImg,
     start: "May 2019",
@@ -38,11 +56,12 @@ export const experiences = [
       "Implemented and launched new modular flow to streamline customer onboarding and product checkout for US wellness brand's largest demographic",
       "Delivered proof-of-concept app for Japanese clothing retailer to demonstrate unification of 30+ fragmented codebases by integrating common services layer and shared design system"
     ],
-    technologies: "Node.js, React, Redux, Express, Bash"
+    technologies: "JavaScript, Node.js, React, Redux, Express, Bash"
   },
   {
     position: "Software Developer Intern",
     company: "LoyaltyOne (AIR MILES)",
+    location: "Toronto, ON",
     companyLink: "https://www.loyalty.com/",
     logo: airmilesImg,
     start: "May 2018",
@@ -53,7 +72,7 @@ export const experiences = [
       "Reduced product release times from ~2 hours to <15 minutes by designing and implementing automated changelog and CI/CD process",
       "Presented tech seminar about improving API documentation practices with Postman;  adopted by 2 other teams"
     ],
-    technologies: "Node.js, React, Redux, Express, TypeScript, Next.js, Jenkins"
+    technologies: "TypeScript, Node.js, React, Redux, Express, Next.js, Jenkins"
   }
 ];
 

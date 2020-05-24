@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -21,6 +22,14 @@ const SingleProject = ({ name, logo, description, link, index }) => {
       </a>
     </div>
   );
+};
+
+SingleProject.propTypes = {
+  name: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired
 };
 
 export default SingleProject;
