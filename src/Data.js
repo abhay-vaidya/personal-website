@@ -95,7 +95,7 @@ export const courses = {
   mathematics: {
     name: "Mathematics",
     id: "math",
-    courses: ["Linear Algebra I", "Linear Algebra II"]
+    courses: ["Linear Algebra I, II", "Calculus I, II, III", "Probability"]
   }
 };
 
