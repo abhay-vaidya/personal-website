@@ -83,13 +83,14 @@ export const courses = {
     courses: [
       "Software Design",
       "Software Tools and Systems Programming",
-      "Computer Organization",
       "Design and Analysis of Data Structures",
       "Principles of Programming Languages",
+      "Operating Systems",
       "Computability and Computational Complexity",
       "Human-Computer Interaction",
       "Engineering Large Software Systems",
-      "Computer and Network Security"
+      "Computer and Network Security",
+      "Computer Organization"
     ]
   },
   mathematics: {
