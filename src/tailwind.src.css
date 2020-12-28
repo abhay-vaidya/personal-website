@@ -4,67 +4,61 @@
 @tailwind screens;
 
 @font-face {
-  font-family: 'GT-America-Expanded';
-  src: url('./assets/fonts/GT-America-Expanded-Regular.woff') format('woff');
+  font-family: "GT-America-Expanded";
+  src: url("./assets/fonts/GT-America-Expanded-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GT-America-Expanded';
-  src: url('./assets/fonts/GT-America-Expanded-Bold.woff') format('woff');
+  font-family: "GT-America-Expanded";
+  src: url("./assets/fonts/GT-America-Expanded-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GT-America-Extended';
-  src: url('./assets/fonts/GT-America-Extended-Regular.woff') format('woff');
+  font-family: "GT-America-Extended";
+  src: url("./assets/fonts/GT-America-Extended-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GT-America-Extended';
-  src: url('./assets/fonts/GT-America-Extended-Bold.woff') format('woff');
+  font-family: "GT-America-Extended";
+  src: url("./assets/fonts/GT-America-Extended-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
-::selection {
-  @apply bg-purple-300;
-}
+@layer base {
+  ::selection {
+    @apply bg-purple-300;
+  }
 
-html {
-  @apply font-sans;
-  @apply leading-normal;
-  @apply text-white;
-  @apply bg-black;
-}
+  html {
+    @apply font-sans;
+    @apply leading-normal;
+    @apply text-white;
+    @apply bg-black;
+  }
 
-h2 {
-  @apply font-expanded;
-  @apply font-bold;
-  @apply text-3xl;
-}
+  h2 {
+    @apply font-expanded;
+    @apply font-bold;
+    @apply text-3xl;
+  }
 
-img {
-  @apply select-none;
+  img {
+    @apply select-none;
+  }
 }
 
 .gradient-bg {
-  background-image: url('./assets/gradient.jpg');
+  background-image: url("./assets/gradient.jpg");
   background-clip: text;
   -webkit-text-fill-color: transparent;
   @apply bg-cover;
-}
-
-.nav-wrapper {
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-
-.nav-active {
-  @apply border-white;
 }
 
 .scroll-arrow {

@@ -27,18 +27,18 @@ const SingleExperience = ({
           <div>
             <p className="font-bold">{position}</p>
             <a
-              className="text-gray-500 lg:hover:text-gray-100"
+              className="text-gray-400 lg:hover:text-gray-100"
               href={companyLink}
               rel="noopener noreferrer"
               target="_blank"
             >
               {company}
             </a>
-            <p className="text-gray-500 text-xs">{location}</p>
+            <p className="text-gray-400 text-xs">{location}</p>
           </div>
         </div>
         <div>
-          <p className="text-gray-500">
+          <p className="text-gray-400">
             {`${start} - ${end}${duration ? ` • ${duration}` : ""}`}
           </p>
         </div>
@@ -54,7 +54,7 @@ const SingleExperience = ({
       )}
       {technologies && (
         <div>
-          <p className="select-none text-gray-500 mb-2">
+          <p className="select-none text-gray-400 mb-2">
             Tools & Technologies:
           </p>
           <p>{technologies}</p>

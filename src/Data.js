@@ -81,9 +81,10 @@ export const courses = {
     name: "Computer Science",
     id: "cs",
     courses: [
+      "Algorithm Design and Analysis",
+      "Design and Analysis of Data Structures",
       "Software Design",
       "Software Tools and Systems Programming",
-      "Design and Analysis of Data Structures",
       "Principles of Programming Languages",
       "Operating Systems",
       "Computability and Computational Complexity",

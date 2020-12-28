@@ -10,7 +10,7 @@ const renderNavLinks = () => {
     return (
       <Link
         key={`nav-${index}`}
-        activeClass="nav-active"
+        activeClass="border-white"
         to={navItem.toLowerCase()}
         spy={true}
         smooth={true}
@@ -45,7 +45,7 @@ const NavBar = () => {
   const socialLinks = renderSocialLinks();
 
   return (
-    <header className="nav-wrapper fixed w-full z-50 select-none">
+    <header className="fixed w-full z-50 select-none bg-gradient-to-b from-black to-transparent">
       <nav className="p-6 flex-col md:flex-row flex md:items-center text-center justify-between container mx-auto">
         <Link
           to="landing"

@@ -12,7 +12,7 @@ const Section = ({ title, id, children }) => {
         >
           <div className="w-full md:w-1/6 self-start">
             {title && (
-              <p className="section-title select-none font-expanded font-bold text-gray-500 md:text-gray-900 text-5xl md:text-7xl lg:text-7xl mb-5 md:mb-0">
+              <p className="section-title select-none font-expanded font-bold text-gray-500 md:text-gray-800 text-5xl md:text-7xl lg:text-7xl mb-5 md:mb-0">
                 {title}
               </p>
             )}
