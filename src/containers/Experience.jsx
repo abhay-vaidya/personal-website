@@ -2,7 +2,6 @@ import React from "react";
 import { SingleExperience } from "../components";
 import Section from "./Section";
 import { experiences } from "../Data";
-import resume from "../assets/Abhay-Vaidya-Resume.pdf";
 
 const renderExperienceSection = () => {
   return experiences.map((exp, index) => {
@@ -24,7 +23,7 @@ const Experience = () => {
         Check out my&nbsp;
         <a
           className="hover:text-purple-400 underline"
-          href={resume}
+          href={`${process.env.PUBLIC_URL}/Abhay-Vaidya-Resume.pdf`}
           rel="noopener noreferrer"
           target="_blank"
         >
