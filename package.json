@@ -10,9 +10,9 @@
     "postcss": "^8.2.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-reveal": "^1.2.2",
     "react-scripts": "2.1.8",
-    "react-scroll": "^1.8.1"
+    "react-scroll": "^1.8.1",
+    "tailwindcss-filters": "^3.0.0"
   },
   "scripts": {
     "tailwind": "tailwind build ./src/tailwind.src.css -o ./src/index.css",
