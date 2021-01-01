@@ -10,7 +10,7 @@ const renderSkillsSection = (skillList, caption, keyPrefix) => {
   return (
     <div className="flex flex-col md:flex-row justify-end mb-6">
       <h2 className="gradient-bg mb-4 md:mr-4 md:mt-2">{caption}</h2>
-      <ul className="border-box flex flex-col text-2xl py-3 px-5 border border-gray-800">
+      <ul className="border-box self-start text-2xl py-3 px-5 border border-gray-800">
         {innerElems}
       </ul>
     </div>
