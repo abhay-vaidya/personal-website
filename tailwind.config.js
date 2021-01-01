@@ -17,6 +17,13 @@ module.exports = {
         '3': '0.75rem',
         '4': '1rem'
       }
-    }
-  }
+    },
+    backdropFilter: {
+      'none': 'none',
+      'blur': 'brightness(60%) saturate(180%) blur(20px)',
+    },
+  },
+  plugins: [
+    require('tailwindcss-filters'),
+  ],
 }

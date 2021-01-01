@@ -45,19 +45,19 @@ const NavBar = () => {
   const socialLinks = renderSocialLinks();
 
   return (
-    <header className="fixed w-full z-50 select-none bg-gradient-to-b from-black to-transparent">
-      <nav className="p-6 flex-col md:flex-row flex md:items-center text-center justify-between container mx-auto">
+    <header className="fixed w-full z-50 select-none backdrop-blur md:backdrop-none">
+      <nav className="p-2 md:p-6 flex-col md:flex-row flex md:items-center text-center justify-between container mx-auto">
         <Link
           to="landing"
           spy={true}
           smooth={true}
-          className="cursor-pointer py-2 px-4 mb-2 md:mb-0 font-expanded font-bold"
+          className="cursor-pointer py-2 px-4 md:mb-0 font-expanded font-bold backdrop-none md:backdrop-blur rounded-full"
         >
           Abhay Vaidya
         </Link>
-        <div>
-          <div className="items-center w-full md:flex-grow md:flex md:justify-around">
-            <div className="text-xs mb-4 md:mb-0 uppercase">{navLinks}</div>
+        <div className="bg-transparent backdrop-none md:backdrop-blur rounded-full">
+          <div className="p-0 pb-2 md:p-2 items-center w-full md:flex-grow md:flex md:justify-around">
+            <div className="text-xs mb-3 md:mb-0 uppercase">{navLinks}</div>
             <div>{socialLinks}</div>
           </div>
         </div>
