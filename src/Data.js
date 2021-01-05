@@ -106,7 +106,7 @@ export const courses = {
 };
 
 export const skills = {
-  design: ["Adobe XD", "Photoshop", "Illustrator"],
+  design: ["Cinema 4D", "Photoshop", "Illustrator"],
   code: ["JavaScript", "Python", "Java", "+ more"]
 };
 
