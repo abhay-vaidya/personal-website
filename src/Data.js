@@ -19,6 +19,11 @@ export const socials = [
     link: "https://linkedin.com/in/abhay-vaidya"
   },
   {
+    name: "Instagram",
+    faIcon: ["fab", "instagram"],
+    link: "https://www.instagram.com/abhay.idk"
+  },
+  {
     name: "Resume",
     faIcon: ["fas", "file-alt"],
     link: `${process.env.PUBLIC_URL}/Abhay-Vaidya-Resume.pdf`

@@ -4,6 +4,7 @@ import { Courses, Experience, Landing, Projects, Skills } from "./containers";
 import {
   faGithub,
   faLinkedin,
+  faInstagram,
   faHubspot
 } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -12,7 +13,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-library.add(faHubspot, faGithub, faLinkedin, faFileAlt, faExternalLinkAlt);
+library.add(
+  faHubspot,
+  faGithub,
+  faLinkedin,
+  faInstagram,
+  faFileAlt,
+  faExternalLinkAlt
+);
 
 const App = () => {
   return (
