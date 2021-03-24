@@ -32,9 +32,21 @@ export const socials = [
 
 export const experiences = [
   {
+    position: "Software Engineer",
+    company: "HubSpot",
+    location: "Cambridge, MA",
+    companyLink: "https://hubspot.com/",
+    logo: hubspotImg,
+    start: "Mar. 2021",
+    end: "Present",
+    duties: [
+      "CRM Records Front-End team"
+    ]
+  },
+  {
     position: "Software Engineering Intern",
     company: "HubSpot",
-    location: "Boston, MA",
+    location: "Cambridge, MA",
     companyLink: "https://hubspot.com/",
     logo: hubspotImg,
     start: "Jan. 2020",

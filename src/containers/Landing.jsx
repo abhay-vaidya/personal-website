@@ -20,15 +20,15 @@ const Landing = () => {
           <h1 className="text-4xl xl:text-5xl">I'm Abhay.</h1>
         </span>
         <p className="lg:text-right text-sm">
-          University of Toronto Computer Science 2021 and incoming Software
-          Engineer at&nbsp;
+          UofT Computer Science graduate and <br />
+          Software Engineer at&nbsp;
           <a
             className="text-yellow-500 hover:text-yellow-300"
             href="https://hubspot.com"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FontAwesomeIcon icon={["fab", "hubspot"]} /> Hubspot
+            <FontAwesomeIcon icon={["fab", "hubspot"]} /> HubSpot
           </a>
           .
         </p>

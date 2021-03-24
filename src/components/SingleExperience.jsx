@@ -44,7 +44,7 @@ const SingleExperience = ({
         </div>
       </div>
       {duties && (
-        <ul className="list-disc pl-6 md:pl-10 mb-4">
+        <ul className="list-disc pl-6 md:pl-10">
           {duties.map((duty, index) => (
             <li className="mb-3" key={`duty-${index}`}>
               {duty}
@@ -53,7 +53,7 @@ const SingleExperience = ({
         </ul>
       )}
       {technologies && (
-        <div>
+        <div className="mt-4">
           <p className="select-none text-gray-400 mb-2">
             Tools & Technologies:
           </p>
